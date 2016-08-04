@@ -422,7 +422,7 @@ function shootRocket() {
   	 	 rocket.name = "Rocket";
 
         //scaling the rocket
-        rocket.scale.x = rocket.scale.y = rocket.scale.z = 5;
+        rocket.scale.x = rocket.scale.y = rocket.scale.z = 7;
 
         //set position at position of the spaceship
         rocket.position.x = ship.position.x;
@@ -628,7 +628,7 @@ function renderWeapons(){
   		//if projectile is a rocket Hitbox:
 	    else if(projectiles[bul].name == "Rocket"){
 			  //translate in mooving direction (translateZ becouse of different orientation then laser)
-	    	projectiles[bul].translateZ(2000 * add);
+	    	projectiles[bul].translateZ(2 * add);
 
 	    	if (dis > 1500){
     			successRocket(bul);
